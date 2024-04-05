@@ -1,17 +1,22 @@
 package com.bitcamp.api.user;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
 import java.sql.SQLException;
 import java.util.*;
 import org.springframework.stereotype.Service;
 
+import com.bitcamp.api.user.model.User;
+
+@Slf4j
 @RequiredArgsConstructor
 @Service
 public class UserServiceImpl implements UserService {
 
     @Override
     public String save(Object t) {
-        // TODO Auto-generated method stub
+        log.info("{}", t);
         throw new UnsupportedOperationException("Unimplemented method 'save'");
     }
 

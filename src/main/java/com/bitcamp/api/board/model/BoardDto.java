@@ -1,9 +1,10 @@
-package com.bitcamp.api.board;
+package com.bitcamp.api.board.model;
 import lombok.*;
 import org.springframework.stereotype.Component;
-import java.util.*;
 
-import com.bitcamp.api.article.Article;
+import com.bitcamp.api.article.model.Article;
+
+import java.util.*;
 
 @Component
 @Data

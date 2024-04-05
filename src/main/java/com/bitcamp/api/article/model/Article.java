@@ -1,13 +1,14 @@
-package com.bitcamp.api.article;
+package com.bitcamp.api.article.model;
 
 import java.util.List;
 
-import com.bitcamp.api.board.Board;
-import com.bitcamp.api.common.BaseEntity;
-import com.bitcamp.api.user.User;
+import com.bitcamp.api.board.model.Board;
+import com.bitcamp.api.common.model.BaseEntity;
+import com.bitcamp.api.user.model.User;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -33,11 +34,11 @@ public class Article extends BaseEntity{
     private String title;
     private String content;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private User writer;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "board_id")
     private Board board;
 

@@ -1,4 +1,4 @@
-package com.bitcamp.api.common;
+package com.bitcamp.api.common.service;
 
 public class UtilServiceImpl implements UtilService {
 

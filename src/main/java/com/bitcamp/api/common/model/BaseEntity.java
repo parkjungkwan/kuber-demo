@@ -1,4 +1,4 @@
-package com.bitcamp.api.common;
+package com.bitcamp.api.common.model;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;

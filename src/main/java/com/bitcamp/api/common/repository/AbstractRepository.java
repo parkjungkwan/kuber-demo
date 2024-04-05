@@ -1,4 +1,4 @@
-package com.bitcamp.api.common;
+package com.bitcamp.api.common.repository;
 
 import java.io.IOException;
 import java.util.Map;

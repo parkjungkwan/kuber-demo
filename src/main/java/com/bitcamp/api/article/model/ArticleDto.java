@@ -1,4 +1,4 @@
-package com.bitcamp.api.article;
+package com.bitcamp.api.article.model;
 
 import org.springframework.stereotype.Component;
 import lombok.*;

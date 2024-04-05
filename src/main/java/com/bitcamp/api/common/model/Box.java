@@ -1,4 +1,4 @@
-package com.bitcamp.api.common;
+package com.bitcamp.api.common.model;
 
 import java.util.HashMap;
 import java.util.List;

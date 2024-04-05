@@ -1,16 +1,9 @@
-package com.bitcamp.api.user;
-
-import java.util.List;
-
+package com.bitcamp.api.user.service;
 import com.bitcamp.api.common.service.CommandService;
 import com.bitcamp.api.common.service.QueryService;
-import com.bitcamp.api.user.model.User;
 import com.bitcamp.api.user.model.UserDto;
-
+import com.mysql.cj.Query;
 
 public interface UserService extends CommandService<UserDto>, QueryService<UserDto>{
-    String updatePassword(User user);
-    List<?> findUsersByName(String name);
-    List<?> findUsersByJob(String job);
-
+    void dummy(UserDto param);
 }

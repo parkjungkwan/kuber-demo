@@ -1,38 +1,44 @@
-package com.bitcamp.api.board;
+package com.bitcamp.api.article.service;
 
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
 
-public class BoardServiceImpl implements BoardService{
+import com.bitcamp.api.article.model.ArticleDto;
+import com.bitcamp.api.common.component.PageRequestVo;
+
+@Service
+
+public class ArticleServiceImpl implements ArticleService{
 
     @Override
-    public String save(Object t) {
+    public String dummy() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'dummy'");
+    }
+
+    @Override
+    public String save(ArticleDto t) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'save'");
     }
 
     @Override
-    public String insertMany() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'insertMany'");
-    }
-
-    @Override
-    public String delete(Object t) {
+    public String delete(ArticleDto t) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'delete'");
     }
 
     @Override
-    public List findAll() throws SQLException {
+    public List<ArticleDto> findAll(PageRequestVo vo) throws SQLException {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'findAll'");
     }
 
     @Override
-    public Optional findById(Long id) {
+    public Optional<ArticleDto> findById(Long id) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'findById'");
     }
@@ -44,7 +50,7 @@ public class BoardServiceImpl implements BoardService{
     }
 
     @Override
-    public Optional getOne(String id) {
+    public Optional<ArticleDto> getOne(String id) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getOne'");
     }
@@ -54,5 +60,6 @@ public class BoardServiceImpl implements BoardService{
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'existsById'");
     }
+
     
 }

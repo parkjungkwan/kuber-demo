@@ -1,9 +1,10 @@
-package com.bitcamp.api.board;
+package com.bitcamp.api.board.model;
 
 import java.util.List;
 import jakarta.persistence.*;
-import com.bitcamp.api.article.Article;
-import com.bitcamp.api.common.BaseEntity;
+
+import com.bitcamp.api.article.model.Article;
+import com.bitcamp.api.common.model.BaseEntity;
 
 import lombok.*;
 

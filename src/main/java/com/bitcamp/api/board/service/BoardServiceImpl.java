@@ -1,52 +1,42 @@
-package com.bitcamp.api.article;
+package com.bitcamp.api.board.service;
 
-import lombok.RequiredArgsConstructor;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.stereotype.Service;
+import com.bitcamp.api.board.model.BoardDto;
+import com.bitcamp.api.common.component.PageRequestVo;
 
-import com.bitcamp.api.user.UserService;
-
-@Service
-@RequiredArgsConstructor
-public class ArticleServiceImpl implements ArticleService {
-
-     private final ArticleRepository repo;
+public class BoardServiceImpl implements BoardService{
 
     @Override
-    public String save(ArticleDto t) {
+    public String dummy() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'dummy'");
+    }
+
+    @Override
+    public String save(BoardDto t) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'save'");
     }
 
     @Override
-    public String insertMany() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'insertMany'");
-    }
-
-    @Override
-    public String delete(ArticleDto t) {
+    public String delete(BoardDto t) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'delete'");
     }
 
     @Override
-    public List<ArticleDto> findAll() throws SQLException {
+    public List<BoardDto> findAll(PageRequestVo vo) throws SQLException {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'findAll'");
     }
 
     @Override
-    public Optional<ArticleDto> findById(Long id) {
-        Article ent = repo.findById(id).get();
-
-        Optional<ArticleDto> dto = entityToDto(ent);
-
-        return Optional.of(dto.orElse(null));
-
+    public Optional<BoardDto> findById(Long id) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findById'");
     }
 
     @Override
@@ -56,7 +46,7 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    public Optional<ArticleDto> getOne(String id) {
+    public Optional<BoardDto> getOne(String id) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getOne'");
     }
@@ -66,10 +56,7 @@ public class ArticleServiceImpl implements ArticleService {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'existsById'");
     }
-     
 
-    
-    
    
     
 }

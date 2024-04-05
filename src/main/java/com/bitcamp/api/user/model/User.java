@@ -1,7 +1,7 @@
-package com.bitcamp.api.user;
+package com.bitcamp.api.user.model;
 
-import com.bitcamp.api.article.Article;
-import com.bitcamp.api.common.BaseEntity;
+import com.bitcamp.api.article.model.Article;
+import com.bitcamp.api.common.model.BaseEntity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -27,10 +27,9 @@ public class User extends BaseEntity{
     private String phone;
     private Long addressId;
     private String job;
-    private double height;
-    private double weight;
 
-    @OneToMany(mappedBy = "writer")
+
+    @OneToMany(mappedBy = "writer", fetch = FetchType.LAZY)
     private List<Article> articles;
 
     @Override
@@ -42,8 +41,7 @@ public class User extends BaseEntity{
                 ", phoneNumber=" + phone +
                 ", address='" + addressId + '\'' +
                 ", job='" + job + '\'' +
-                ", height=" + height +
-                ", weight=" + weight +
+   
                 '}' + '\n';
     }
 
